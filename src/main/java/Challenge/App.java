@@ -6,35 +6,34 @@
 package Challenge;
 
 /*
-Create a simple self-checkout system. Prompt for the prices and quantities
-of three items. Calculate the subtotal of the items. Then calculate the
-tax using a tax rate of 5.5%. Print out the line items with the quantity
-and total, and then print out the subtotal, tax amount, and total.
+Write a program that converts currency. Specifically, convert euros to U.S.
+dollars. Prompt for the amount of money in euros you have, and prompt for
+the current exchange rate of the euro. Print out the new amount in U.S. dollars.
+
+The formula for currency conversion is:
+amount_to = (amount_from * rate_from) / rate_to
+
+where:
+amount_to is the amount in U.S. dollars.
+amount_from is the amount in euros.
+rate_from is the current exchange rate in euros.
+rate_to is the current exchange rate of the U.S. dollar.
 
 Example Output:
-Enter the price of item 1: 25
-Enter the quantity of item 1: 2
-Enter the price of item 2: 10
-Enter the quantity of item 2: 1
-Enter the price of item 3: 4
-Enter the quantity of item 3: 1
-Subtotal: $64.00
-Tax: $3.52
-Total: $67.52
+How many euros are you exchanging? 81
+What is the exchange rate? 137.51
+81 euros at an exchange rate of 137.51 is
+111.38 U.S. dollars.
 
 Constraints:
-*Keep the input, processing, and output parts of your program separate.
-Collect the input, then do the math operations and string building, and
-then print out the output.
-*Be sure you explicitly convert input to numerical data before doing any
-calculations.
+Ensure that fractions of a cent are rounded up to the next penny.
+Use a single output statement.
 
 Challenges:
-*Revise the program to ensure that prices and quantities are entered as
-numeric values. Don’t allow the user to proceed if the value entered is
-not numeric.
-*Alter the program so that an indeterminate number of items can be entered.
-The tax and total are computed when there are no more items to be entered.
+*Build a dictionary of conversion rates and prompt for the countries
+instead of the rates.
+*Wire up your application to an external API that provides the current
+exchange rates.
  */
 
 public class App {
